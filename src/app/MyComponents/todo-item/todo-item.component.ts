@@ -13,11 +13,11 @@ export class TodoItemComponent implements OnInit {
   @Output() todoDelete: EventEmitter<Todo> = new EventEmitter();
 
   constructor() { }
-  
+
   ngOnInit(): void {
   }
 
-  onClick(todo: Todo){
+  onClick(todo: Todo) {
     this.todoDelete.emit(todo);
     console.log("onClick has been triggered");
   }
