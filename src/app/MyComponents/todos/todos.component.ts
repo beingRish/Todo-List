@@ -8,6 +8,7 @@ import { Todo } from '../../Todo';
 })
 export class TodosComponent implements OnInit {
 
+
   todos!: Todo[];
   constructor(){ 
     this.todos = [
@@ -34,5 +35,9 @@ export class TodosComponent implements OnInit {
 
   ngOnInit(): void{
 
+  }
+
+  deleteTodo(todo:Todo){
+    console.log(todo);
   }
 }
